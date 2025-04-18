@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário Garu</title>
+  <link rel="stylesheet" href="css\style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="index.html" class="back-arrow">←</a>
+  <div class="centered">
+    <h1>Toque nos quadradinhos 💌</h1>
+    <div class="grid">
+      <div class="piece" data-message="Você é incrível..." data-gif="img\puccapulando.gif">1</div>
+      <div class="piece" data-message="Você é meu capacho..." data-gif="img\puccacavalinho.gif">2</div>
+      <div class="piece" data-message="Você também é um gatinho..." data-gif="img\garunapraia.gif">3</div>
+      <div class="piece" data-message="Você me tira do sério..." data-gif="img\puccacomraiva.gif">4</div>
+      <div class="piece" data-message="Você é chato, mas eu gosto de você..." data-gif="img\puccavirandogaru.gif">5</div>
+      <div class="piece" data-message="Você cuida tão bem de mim..." data-gif="img\puccachorando.gif">6</div>
+      <div class="piece" data-message="Você é tão perfeitinho..." data-gif="img\puccabeijandop.gif">7</div>
+      <div class="piece" data-message="Você é um pouco estranho..." data-gif="img\garuolhando.gif">8</div>
+      <div class="piece" data-message="Você tem uns olhos curiosos..." data-gif="img\garuolhar.gif">9</div>
+      <div class="piece" data-message="Mas, no final só sei dançar com você..." data-gif="img\puccanapraia.gif">10</div>
+    </div>
+    <a href="foto.html" class="button">Próximo</a>
+  </div>
+
+  <div id="popup" class="popup">
+    <img id="popup-gif" src="" alt="gif" style="max-width: 200px; display: none;" />
+    <p id="popup-text"></p>
+    <button onclick="fecharMensagem()">Fechar</button>
+  </div>
+
+  <script src="js\script.js"></script>
+
+  <div id="audio-player">
+    <audio id="background-music" autoplay loop>
+      <source src="img\Mania De Você.mp3" type="audio/mp3" />
+      Seu navegador não suporta áudio.
+    </audio>
+    <button onclick="toggleMusic()" id="toggle-btn">⏸️</button>
+    <span id="music-name">Tocando: Mania de Você - Rita Lee 🎵</span>
+  </div>
+
+</body>
+</html>
